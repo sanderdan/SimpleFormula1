@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <RelativeLayout
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:gravity="left">
+            <ImageView
+                android:id="@+id/flag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"/>
+            </RelativeLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/raceInfo"
+            android:paddingStart="5sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/pos"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/raceName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Australian Grand Prix"
+                android:textColor="#D9000000"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/circuitName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Albert Park Grand Prix Circuit"
+                android:textColor="#8C000000"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <!--<View-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="0dp"-->
+                    <!--android:layout_weight="1" />-->
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    />
+                <TextView
+                    android:id="@+id/locality"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Melbourne"
+                    android:textColor="#8C000000"
+                    android:textSize="12sp"
+                    android:paddingEnd="5sp"
+                    android:paddingTop="5dp"/>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    />
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2015-03-15"
+                    android:textColor="#8C000000"
+                    android:textSize="12sp"
+                    android:paddingEnd="5sp"/>
+
+                <TextView
+                    android:id="@+id/time"
+                    android:paddingEnd="5sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="05:00:00Z"
+                    android:textColor="#8C000000"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

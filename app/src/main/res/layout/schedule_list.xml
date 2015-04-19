@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#26FFFFFF"
+    android:weightSum="10">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:text="Schedule"
+        android:textSize="30dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:background="#212121"
+        android:textColor="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <ListView
+        android:background="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_marginStart="10sp"
+        android:layout_marginTop="10sp"
+        android:layout_marginEnd="10sp"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:id="@+id/listView_schedule">
+    </ListView>
+
+</LinearLayout>
+
+</RelativeLayout>
